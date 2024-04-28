@@ -1,4 +1,4 @@
-#skills{
+#skills {
     overflow: hidden;
     width: 100vw;
     max-width: 70rem;
@@ -9,58 +9,109 @@
     text-align: center;
     margin: 0 auto;
 }
-.SkillTitle{
+
+.SkillTitle {
     font-size: 3rem;
     font-weight: 600;
     padding-top: 3rem;
     margin-bottom: 2rem;
 }
-.SkillDesc{
-    font-weight: 400;
-    font-size: 0.9rem;
-    max-width: 50rem;
-    padding: 0 2rem;
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.skillBars{
+
+.skillBars {
     margin: 1.5rem;
     width: 100vh;
     max-width: 80%;
     text-align: left;
 }
-.skillBar{
+
+.skillBar {
     display: flex;
     margin: 1rem;
     padding: 1.5rem 2rem;
     border-radius: 0.5rem;
     background: rgb(50, 50, 50);
 }
-.skillBarImg{
+
+.skillBarImg {
     object-fit: cover;
-    height: 3rem;
-    width: 3rem;
+    height: 4rem;
+    width: 4rem;
+    margin-top: 3rem;
     margin-right: 2rem;
 
-} 
-.skillBarText>p{
+}
+
+.skillBarText>p {
     font-size: 0.9rem;
     font-weight: 200;
 
 }
-@media screen and (max-width:720px){
-    .skillBarText>P{
+
+.skill-item {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+   
+    align-items: start;
+    
+    flex-wrap: wrap;
+   
+}
+
+.skill-item>div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    
+}
+
+.skill-item>div>span {
+    margin: 5px;
+    
+}
+.level{
+    font-size: 11px;
+    margin-left: 13px;
+    font-weight: 300;
+    padding: 0;
+}
+span{
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+
+   
+    .skill-item>div {
+        margin: 5px;
+       
+    }
+}
+
+@media screen and (max-width:720px) {
+    .skillBarText>P {
         font-size: 2vw;
     }
 }
-@media screen and (max-width:480px){
-    .skillBarText>P{
+
+@media screen and (max-width:480px) {
+    .skillBarText>P {
         font-size: 3vw;
     }
-    .skillBarImg{
+
+    .skillBarImg {
         height: 2.25rem;
         width: 2.25rem;
     }
-    .skillBarText>h2{
+
+    .skillBarText>h2 {
         font-size: 5vw;
-        
+
     }
 }

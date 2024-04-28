@@ -30,10 +30,19 @@
   font-weight: 100;
 
 }
-.introName{
-    color: yellow;
+.introName {
+    display: inline-block;
+    color: #6e6968;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .introName:hover {
+    transform: translateX(20px); /* Move text 10px to the right on hover */
+    color: #ff5733; /* Change text color on hover */
+  }
+  
 
-}
+
 .intropara{
     font-size: medium;
     font-weight: 300;
@@ -42,15 +51,23 @@
 }
 .btn{
     background: white;
+    transition: transform 0.3s ease, color 0.3s ease;
     margin: 1rem 0;
     padding: 0.75rem 1.5rem ;
     border: none;
+    width: 12rem;
+    display: inline-block;
     border-radius: 2rem;
+}
+.btn:hover{
+    transform: translatey(10px);
+
 }
 .btnImg{
     object-fit: cover;
     margin: 0 0.25rem;
     height: 1rem;
+    
     margin-right: 0.5rem;
 
 }
